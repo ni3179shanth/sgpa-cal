@@ -1,0 +1,41 @@
+*{
+    margin: none;
+   
+    @media screen and (max-width: 768px)
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+body{
+
+background-image: url(./wallpaperflare.com_wallpaper\ \(15\).jpg);}
+button{
+    width: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 100px;
+    font-size: 40px;
+    color:black;
+    margin-top: 85px;
+    font-weight: bold;
+    margin-right: -95px;
+    background-color: transparent;
+    border:- 20px;
+    cursor: pointer;
+    border-radius: 10mm;
+    border-style:solid;
+ margin-left: 10%;
+ border-width: 2px;   
+
+box-shadow:0 0 0 black ;}
+button:hover{
+    background-color:purple;
+    transition: 0.2s;
+    opacity: 0.4;
+    color: black;
+  
+}
+button:active{
+    background-color: white;
+    opacity: 0.3;
+    color: black;
+}
+

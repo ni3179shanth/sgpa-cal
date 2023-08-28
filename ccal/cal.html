@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+      *{
+        margin:none;
+        background-color: gray;
+      }
+      input{
+        background-color: white;
+      }
+    </style>
+</head>
+<h1>Analysis the Grade using this O = 10 , A+ = 9 , A = 8 , B + = 7 , B = 6 , C = 5 , U = 0</h1>
+<body>
+  <div class="container">
+    
+    <label for="one">Credit:1</label>
+    <input type="text" id="one" value="0"/><br>
+    <label for="a">Grade:1</label>
+    <input type="text" id="a" value="0"/><br>
+    <br>    
+    <label for="two">Credit:2</label>
+    <input type="text" id="two" value="0"/><br>
+    <label for="b">Grade:2</label>
+    <input type="text" id="b" value="0"/><br>
+    <br>
+    <label for="three">Credit:3</label>
+    <input type="text" id="three" value="0"/><br>
+    <label for="c">Grade:3</label>
+    <input type="text" id="c" value="0"/><br>
+    <br>
+    <label for="four">Credit:4</label>
+    <input type="text" id="four" value="0"/><br>
+    <label for="d">Grade:4</label>
+    <input type="text" id="d" value="0"/><br>
+    <br>
+    
+    <label for="five">Credit:5</label>
+    <input type="text" id="five" value="0"/><br>
+    <label for="e">Grade:5</label>
+    <input type="text" id="e" value="0"/><br>
+<br>
+    <label for="six">Credit:6</label>
+    <input type="text" id="six" value="0"/><br>
+    <label for="f">Grade:6</label>
+    <input type="text" id="f" value="0"/><br>
+<br>
+      <label for="seven">Credit:7</label>
+      <input type="text" id="seven" value="0"/><br>
+      <label for="g">Grade:7</label>
+      <input type="text" id="g" value="0"/><br>
+    <br>  
+      <label for="eight">Credit:8</label>
+      <input type="text" id="eight" value="0"/><br>
+      <label for="h">Grade:8</label>
+      <input type="text" id="h" value="0"/><br>
+      <br>
+      <label for="nine">Credit:9</label>
+      <input type="text" id="nine" value="0"/><br>
+      <label for="i">Grade:9</label>
+      <input type="text" id="i" value="0"/><br>
+<br>
+      <label for="ten">Credit:T</label>
+      <input type="text" id="ten" value="0"/><br>
+      <label for="j">Grade:T</label>
+      <input type="text" id="j" value="0"/><br>
+    <br>
+    <br>
+      <label for="lg"> L-CGPA</label>
+      <input type="text" id="lg" value="0" />
+<br><br>
+    <label for="sgpa"> &nbsp;P-SGPA</label>
+    <input type="text" id="sgpa" value="0" disabled/>
+  <br>
+    <label for="cgpa"> &nbsp;P-CGPA</label>
+    <input type="text" id="cgpa" value="0" disabled/>
+  <br>
+    <input type="button" value="Submit" onclick="submit()"/>
+    <input type="button" value="Reset" onclick="reset()"/>
+ 
+  </div>  
+  <script type="text/javascript">
+    function reset(){
+        document.getElementById("one").value="0";
+        document.getElementById("a").value="0";
+        document.getElementById("two").value="0";
+        document.getElementById("b").value="0";
+        document.getElementById("three").value="0";
+        document.getElementById("c").value="0";
+        document.getElementById("four").value="0";
+        document.getElementById("d").value="0";
+        document.getElementById("five").value="0";
+        document.getElementById("e").value="0";
+        document.getElementById("six").value="0";
+        document.getElementById("f").value="0";
+        document.getElementById("seven").value="0";
+        document.getElementById("g").value="0";
+        document.getElementById("eight").value="0";
+        document.getElementById("h").value="0";
+        document.getElementById("nine").value="0";
+        document.getElementById("i").value="0";
+        document.getElementById("ten").value="0";
+        document.getElementById("j").value="0";
+
+        document.getElementById("sgpa").value="0";
+        document.getElementById("cgpa").value="0";
+        document.getElementById("lg").value="0";
+
+    }
+    function submit(){
+        var num1=Number (document.getElementById("one").value);
+        var a1=Number (document.getElementById("a").value);
+        var num2=Number(document.getElementById("two").value);
+        var b1=Number(document.getElementById("b").value);
+        var num3=Number(document.getElementById("three").value);
+        var c1=Number(document.getElementById("c").value);
+        var num4=Number(document.getElementById("four").value);
+        var d1=Number(document.getElementById("d").value);
+        var num5=Number(document.getElementById("five").value);
+        var e1=Number(document.getElementById("e").value);
+        var num6=Number(document.getElementById("six").value);
+        var f1=Number(document.getElementById("f").value);
+        var num7=Number(document.getElementById("seven").value);
+        var g1=Number(document.getElementById("g").value);
+        var num8=Number(document.getElementById("eight").value);
+        var h1=Number(document.getElementById("h").value);
+        var num9=Number(document.getElementById("nine").value);
+        var i1=Number(document.getElementById("i").value);
+        var num10=Number(document.getElementById("ten").value);
+        var j1=Number(document.getElementById("j").value);
+        var lg1=Number(document.getElementById("lg").value);
+
+        var mul1=num1*a1;
+        var mul2=num2*b1;
+        var mul3=num3*c1;
+        var mul4=num4*d1;
+        var mul5=num5*e1;
+        var mul6=num6*f1;
+        var mul7=num7*g1;
+        var mul8=num8*h1;
+        var mul9=num9*i1;
+        var mul10=num10*j1;
+        var mula=mul1+mul2+mul3+mul4+mul5+mul6+mul7+mul8+mul9+mul10;
+        var add=num1+num2+num3+num4+num5+num6+num7+num8+num9+num10;
+        var sgpa=mula/add;
+        var cgpa=(lg1+sgpa)/2;
+
+
+        document.getElementById("sgpa").value=String(sgpa);
+        document.getElementById("cgpa").value=String(cgpa);
+        
+      }
+  </script>
+  <footer>
+    - Geni
+  </footer>
+  
+</body>
+</html>
